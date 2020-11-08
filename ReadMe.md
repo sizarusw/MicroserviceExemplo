@@ -1,54 +1,58 @@
-# AspNetCoreApiGateway
+# Exemplo de Microservices
 
-API Gateway with Ocelot in ASP.NET Core.
+Exemplo simples de microservice com CRUD utilizando ORM NHibernate com .NetCore.
 
-## API Gateway Pattern
+## Utilizamos
 
-[Microsoft Documentation](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern)
+* .NetCore
+* NHibernate
+* SQLite
+* API Gateway Ocelot
 
-## Nuget Package
+## Nuget Packages
 
-[Ocelot](https://github.com/ThreeMammals/Ocelot)
-
-## Features
-
-* Routing
-* Request Aggregation
-* Service Discovery with Consul & Eureka
-* Service Fabric
-* WebSockets
-* Authentication
-* Authorisation
-* Rate Limiting
-* Caching
-* Retry policies / QoS
-* Load Balancing
-* Logging / Tracing / Correlation
-* Headers / Query String / Claims Transformation
-* Custom Middleware / Delegating Handlers
-* Configuration / Administration REST API
-* Platform / Cloud Agnostic
+* NHibernate
+* FluentNhibernate
+* Ocelot
+* System.Data.SQLite
+* Newtonsoft.Json
 
 ## Microservices
 
-### Customers
+### Produto
 
-[https://**localhost:9030**/api/customers](https://localhost:9030/api/customers)
+**Porta:** 9030
+**Rota:** [api/produto]
 
-[https://**localhost:9030**/api/customers/1](https://localhost:9030/api/customers/1)
+**Exemplo da URL:** https://localhost:9030/api/produto
 
-### Products
+### Cliente
 
-[https://**localhost:9050**/api/products](https://localhost:9050/api/products)
+**Porta:** 9050
+**Rota:** [api/cliente]
 
-[https://**localhost:9050**/api/products/1](https://localhost:9050/api/products/1)
+**Exemplo da URL:** https://localhost:9050/api/cliente
 
-## API Gateway
+### API Gateway - Ocelot
 
-[https://**localhost:9010**/customers](https://localhost:9010/customers)
+**Porta:** 9010
 
-[https://**localhost:9010**/customers/1](https://localhost:9010/customers/1)
+**Exemplo de URL de acesso através do Gateway:**
+https://localhost:9010/produto
 
-[https://**localhost:9010**/products](https://localhost:9010/products)
+**Exemplos de URL de acesso através do Gateway:**
+https://localhost:9010/cliente
 
-[https://**localhost:9010**/products/1](https://localhost:9010/products/1)
+## Banco de dados do exemplo
+
+Utilizamos o banco **SQLite** por ser leve e ser de simples demonstração.
+
+### Local do banco
+
+O exemplo do banco está localizado na pasta raiz.
+
+**Arquivo:** principal.db
+
+O caminho do banco no projeto está localizado na variável *connectionString* do *NHibernateExtensions.cs* (Função AddNHibernate)
+
+**Default:** C:\sqlite\principal.db;
