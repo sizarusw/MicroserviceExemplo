@@ -1,0 +1,13 @@
+{
+    "profiles": {
+        "Cliente": {
+            "applicationUrl": "https://localhost:9050;http://localhost:9060",
+            "commandName": "Project",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "launchBrowser": false,
+            "launchUrl": "api/cliente"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "profiles": {
+        "Produto": {
+            "applicationUrl": "https://localhost:9030;http://localhost:9040",
+            "commandName": "Project",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "launchBrowser": false,
+            "launchUrl": "api/produto"
+        }
+    }
+}

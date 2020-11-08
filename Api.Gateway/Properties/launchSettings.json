@@ -1,0 +1,13 @@
+{
+    "profiles": {
+        "ApiGateway": {
+            "applicationUrl": "https://localhost:9010;http://localhost:9020",
+            "commandName": "Project",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "launchBrowser": true,
+            "launchUrl": "produto"
+        }
+    }
+}
