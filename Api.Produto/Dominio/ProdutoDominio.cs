@@ -29,7 +29,7 @@ namespace Api.Produto.Dominio
         /// <returns>Boolean, True = êxito, False = Falha</returns>
         public bool Upsert(Produto item)
         {
-            //Verifique o que se encaixa melhor com sua escolha no banco
+            //Verifique o que se encaixa melhor com sua escolha no banco.
 
             bool retorno = false;
 
