@@ -29,13 +29,13 @@ namespace Api.Produto.Dominio
         /// <returns>Boolean, True = êxito, False = Falha</returns>
         public bool Upsert(Produto item)
         {
+            //Verifique o que se encaixa melhor com sua escolha no banco
 
             bool retorno = false;
 
             ITransaction transaction = null;
-
+         
             //É possível também utilizar o _session.SaveOrUpdate caso tenha identificadores bem definidos.
-            // Teste
 
             try
             {
