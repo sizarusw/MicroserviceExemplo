@@ -13,7 +13,7 @@ namespace Api.Produto.Dominio
 
 
         /// <summary>
-        /// Encontra o registro usando como param o Id (Chave Primaria)
+        /// Encontra o registro usando como param o Id (Chave Primaria).
         /// </summary>
         /// <param name="id">Código identificador do registro no banco</param>
         /// <returns>Objeto do Produto</returns>
@@ -35,6 +35,7 @@ namespace Api.Produto.Dominio
             ITransaction transaction = null;
 
             //É possível também utilizar o _session.SaveOrUpdate caso tenha identificadores bem definidos.
+            // Teste
 
             try
             {
